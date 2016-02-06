@@ -3,22 +3,23 @@
 
   angular
     .module('angularCourse2016')
-    .directive('acmeNavbar', acmeNavbar);
+    .directive('acmeHome', acmeHome);
 
   /** @ngInject */
-  function acmeNavbar() {
+  function acmeHome() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/navbar/navbar.html',
-      controller: NavbarController,
-      controllerAs: 'nc',
+      templateUrl: 'app/components/home/home.html',
+      controller: HomeController,
+      controllerAs: 'hc',
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
+    function HomeController() {
+
     }
   }
 

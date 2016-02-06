@@ -6,8 +6,9 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log) {
+  function runBlock($state, $log) {
 
+	$state.go('main.home');
     $log.debug('runBlock end');
   }
 
